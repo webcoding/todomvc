@@ -30,7 +30,7 @@ _If you have other helpful links to share, or find any of the links above no lon
 
 Running this app requires [Node.js](http://nodejs.org).
 
-	# from labs/architecture-examples/socketstream
+	# from examples/socketstream
 	npm install
 	npm start
 
@@ -42,4 +42,4 @@ Open http://localhost:3000 in two side-by-side browser windows, add a todo, and 
 How to publish to our Heroku remote:
 
 - `git remote add heroku-todomvc-socketstream master` *(first time only)*
-- `git subtree push --prefix labs/architecture-examples/socketstream heroku-todomvc-socketstream master`
+- `git subtree push --prefix examples/socketstream heroku-todomvc-socketstream master`

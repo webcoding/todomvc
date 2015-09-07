@@ -22,7 +22,7 @@
 							<label data-bind="text: title, event: { dblclick: $root.editItem }"></label>
 							<button class="destroy" data-bind="click: $root.remove"></button>
 						</div>
-						<input class="edit" data-bind="value: title, valueUpdate: 'afterkeydown', enterKey: $root.saveEditing, escapeKey: $root.cancelEditing, selectAndFocus: editing, event: { blur: $root.stopEditing }">
+						<input class="edit" data-bind="value: title, valueUpdate: 'afterkeydown', enterKey: $root.saveEditing, escapeKey: $root.cancelEditing, selectAndFocus: editing, event: { blur: $root.saveEditing }">
 					</li>
 				</ul>
 			</section>
@@ -42,7 +42,7 @@
 						<a data-bind="css: { selected: showMode() == 'completed' }" href="#/completed">Completed</a>
 					</li>
 				</ul>
-				<button id="clear-completed" data-bind="visible: completedCount, click: removeCompleted">Clear completed (<span data-bind="text: completedCount"></span>)</button>
+				<button id="clear-completed" data-bind="visible: completedCount, click: removeCompleted">Clear completed</button>
 			</footer>
 		</section>
 		<footer id="info">
